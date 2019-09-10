@@ -10,7 +10,7 @@ import java.util.concurrent.locks.Lock;
  */
 public class XixiLockV1 implements Lock {
 
-    // 多线程情况下，thread需要原子操作，线程不安全
+    // 多线程情况下，thread赋值置空需要原子操作，线程不安全
     Thread thread = null;
 
     /**
