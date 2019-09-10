@@ -8,6 +8,7 @@ public class LockDemoV2 {
     private int i = 0;
 
     Lock lock = new XixiLockV2(); // 可重入锁，不排他，多人
+//    Lock lock = new ReentrantLock(); // java实现的可重入锁
     private void incr(){
         lock.lock();
         try {
